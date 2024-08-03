@@ -12,34 +12,112 @@
     --font-open-sans: "Open Sans", sans-serif;
   }
   
-  * {
+* {
     box-sizing: border-box;
   }
 
-  body {
+body {
     font-family: var(--font-open-sans);
   }
   
-  a {
+a {
     text-decoration: none;
   }
 
-  .container {
+.container {
     width: 1352px;
     margin: 0 auto;
   }
+
+/* ---- HEADER ---- */
   
 .header {
-    width: 100%;
-    display: flex;
+    height: 70px;
+    box-shadow: 0px 3px 6px #00000029;
 }
 
-.header__container .container {
-    background: white;
+.header__container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
 
 .logo {
-    font-size: 3.5em;
-    color: #08A6E4;
+    font-family: var(--font-raleway);
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--color-primary);
 }
+
+.header__nav {
+    display: flex;
+}
+
+.nav__link {
+    color: var(--color-grey);
+    font-weight: 700;
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    padding: 28px 18px 22px;
+    border-bottom: 4px solid transparent;
+    letter-spacing: 0.1875rem;
+  }
+  
+.nav__link:hover {
+    color: var(--color-black);
+    border-color: var(--color-primary);
+  }
+
+.nav__element {
+    padding: 0 26px;
+  }
+
+.nav__element:last-child {
+    padding-right: 0;
+  }
+  
+  
+/* ---- MAIN ---- */
+
+.section__opening {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section__opening__top {
+    margin-top: 130px;
+    text-align: center;
+}
+
+.section__opening__h1 {
+    font-size: 3.0625rem;
+    font-family: var(--font-raleway);
+}
+
+.section__opening__text {
+    margin-top: 20px;
+    margin-bottom: 38px;
+}
+
+.section__opening__btn {
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-weight: bold;
+    border: none;
+    border-radius: 40px;
+    box-shadow: #07ACE629 5px 10px 14px;
+    display: inline-block;
+    padding: 22px 155px;
+}
+
+.section__opening__img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/* ---- FOOTER ---- */
