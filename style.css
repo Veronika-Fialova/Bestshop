@@ -29,4 +29,17 @@
     margin: 0 auto;
   }
   
-  
+.header {
+    width: 100%;
+    display: flex;
+}
+
+.header__container .container {
+    background: white;
+    display: flex;
+}
+
+.logo {
+    font-size: 3.5em;
+    color: #08A6E4;
+}
